@@ -1,0 +1,33 @@
+$main-font: "Forum", cursive; 
+$secont-font: "Inter", sans-serif; 
+
+$main-color: #AB825E;
+$second-color: #AC3D41;
+$second-color-hover: #cc353a;
+$light-color : #F0F0F0;
+$dark-color: #110D09;
+
+$title: 42px; 
+$logo: 30px; 
+$subtitle: 20px; 
+$text: 16px; 
+$small: 12px;
+
+@mixin textStyle($Font, $Size, $LH, $Weight, $color){
+    font-family: $Font;
+    font-size:$Size;
+    line-height:$LH;
+    font-weight:$Weight;
+    color: $color;
+}
+
+.container{
+    width: 100vw;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.inner{
+    max-width: 1440px;
+    margin: 0 auto;
+}

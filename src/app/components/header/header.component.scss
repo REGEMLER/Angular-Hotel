@@ -1,0 +1,52 @@
+@import "../../app.component.scss";
+
+.bg__header{
+    background-color: #AC835F;
+}
+
+.inner__header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    .logo__link{
+        display: block;
+        width: 100px;
+        height: 80px;
+        object-fit: cover;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.btn__book{
+    width: 110px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: $second-color;
+    @include textStyle($secont-font, 20px, 20px, 400, white);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in .5s;
+    &:hover{
+        transform: scale(1.05);
+        background-color: $second-color-hover;
+    }
+}
+
+.btn__theme{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px; 
+    object-fit: cover;
+    cursor: pointer;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

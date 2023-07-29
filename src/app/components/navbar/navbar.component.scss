@@ -1,0 +1,16 @@
+@import "../../app.component.scss";
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    .navbar__item{
+        @include textStyle($secont-font, $subtitle, 20px, 400, white);
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
