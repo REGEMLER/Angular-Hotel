@@ -1,0 +1,35 @@
+@import "../../../app.component.scss";
+
+.bg__main{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg1{
+    background-image: url("../../../../assets/hotel1.jpg");
+}
+.bg2{
+    background-image: url("../../../../assets/hotel2.jpg");
+}
+.bg3{
+    background-image: url("../../../../assets/hotel3.jpg");
+}
+
+.main__inner{
+    min-height: 900px;
+    .main__title{
+        display: inline-block;
+        @include textStyle($logo-font, 64px, 20px, 700, black);
+        background-color: white;
+        padding: 30px;
+        margin: 20px auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .main__content{
+        height: 300px;
+        width: 700px;
+        background-color: aquamarine;
+    }
+}

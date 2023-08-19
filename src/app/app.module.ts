@@ -15,6 +15,7 @@ import { GalleryComponent } from './components/pages/gallery/gallery.component';
 import { NewsComponent } from './components/pages/news/news.component';
 import { ReviewsComponent } from './components/pages/reviews/reviews.component';
 import { ContactsComponent } from './components/pages/contacts/contacts.component';
+import { BgsliderComponent } from './components/blocks/bgslider/bgslider.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContactsComponent } from './components/pages/contacts/contacts.componen
     GalleryComponent,
     NewsComponent,
     ReviewsComponent,
-    ContactsComponent
+    ContactsComponent,
+    BgsliderComponent
   ],
   imports: [
     BrowserModule,

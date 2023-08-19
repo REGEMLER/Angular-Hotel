@@ -1,0 +1,8 @@
+<main class="container bg__main" [ngClass]="{bg1 : this.currentLink === 0,
+    bg2 : this.currentLink === 1,
+    bg3 : this.currentLink === 2}">
+    <div class="main__inner">
+        <h1 (click)="setBg()" class="main__title">The best hotel by any angle</h1>
+        <div class="main__content"></div>
+    </div>
+</main>
