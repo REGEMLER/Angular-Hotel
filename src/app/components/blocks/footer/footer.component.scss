@@ -1,0 +1,13 @@
+@import "../../../app.component.scss";
+div {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-color;
+}
+
+p {
+    font-size: 60px;
+    color: blue;
+}
