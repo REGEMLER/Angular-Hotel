@@ -1,10 +1,9 @@
-<ul class="navbar">
+<ul class="navbar" [class.navbar_active]="this.isVisible">
     <li [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="navbar__item"><a routerLink="/">Home</a></li>
-    <li routerLinkActive="active" class="navbar__item"><a routerLink="/rooms">Rooms</a></li>
-    <li routerLinkActive="active" class="navbar__item"><a routerLink="/services">Services</a></li>
-    <li routerLinkActive="active" class="navbar__item"><a routerLink="/offers">Offers</a></li>
-    <li routerLinkActive="active" class="navbar__item"><a routerLink="/gallery">Gallery</a></li>
-    <li routerLinkActive="active" class="navbar__item"><a routerLink="/news">News</a></li>
-    <li routerLinkActive="active" class="navbar__item"><a routerLink="/reviews">Reviews</a></li>
-    <li routerLinkActive="active" class="navbar__item"><a routerLink="/contacts">Contacts</a></li>
+    <li *ngFor="let item of items" routerLinkActive="active" class="navbar__item"><a routerLink="{{item.link}}">{{item.text}}</a></li>
 </ul>
+<div class="burger" (click)="showMenu()">
+    <span class="burger__item burger__item1"></span>
+    <span class="burger__item burger__item2"></span>
+    <span class="burger__item burger__item3"></span>
+</div>

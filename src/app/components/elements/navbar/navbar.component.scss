@@ -1,20 +1,78 @@
 @import "../../../app.component.scss";
 
+:root{
+    position: relative;
+}
+
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    @media screen and (max-width: 1202px){
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transition: all linear 1s;
+    }
     .navbar__item{
-        @include textStyle($secont-font, $subtitle, 20px, 400, white);
+        @include textStyle($secont-font, $subtitle, 20px, 400, black);
         text-transform: uppercase;
         cursor: pointer;
+        a{
+            color: black;
+        }
         &:hover{
             text-decoration: underline;
         }
     }
+    .active {
+        color: $second-color-hover;
+        a{
+            color: $second-color-hover;
+        }
+    }
 }
 
-.active {
-    background-color: red;
+.navbar_active{
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+.burger{
+    display: none;
+    .burger__item{
+        width: 40px;
+        height: 4px;
+        background-color: black;
+    }
+    @media screen and (max-width: 1202px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        background-color: $light-color;
+        gap: 10px;
+        position: absolute;
+        top: 20px;
+        right: 25%;
+        cursor: pointer;
+    }
+    @media screen and (max-width: 1000px){
+        right: 30%;
+    }
+    @media screen and (max-width: 815px){
+        right: 40%;
+    }
+    @media screen and (max-width: 650px){
+        right: 50%;
+    }
+    @media screen and (max-width: 480px){
+        right: 60%;
+    }
 }

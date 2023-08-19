@@ -5,17 +5,31 @@
 }
 
 .inner__header{
-    padding: 20px;
+    padding: 20px 10px;
+    padding-right: 5%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 1440px){
+        padding-right: 7%;
+    }
+    @media screen and (max-width: 1024px){
+        padding-right: 10%;
+    }
+    @media screen and (max-width: 722px){
+        padding-right: 15%;
+    }
+    @media screen and (max-width: 480px){
+        padding-right: 20%;
+    }
 }
 
 .logo{
     .logo__link{
         display: block;
-        width: 100px;
-        height: 80px;
+        width: 90px;
+        height: 60px;
+        border-radius: 5px; 
         object-fit: cover;
         img{
             width: 100%;
@@ -24,9 +38,16 @@
     }
 }
 
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .btn__book{
-    width: 110px;
-    height: 80px;
+    width: 90px;
+    height: 60px;
+    padding: 8px;
     border-radius: 5px;
     background-color: $second-color;
     @include textStyle($secont-font, 20px, 20px, 400, white);
@@ -40,8 +61,9 @@
 }
 
 .btn__theme{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
     border-radius: 5px; 
     object-fit: cover;
     cursor: pointer;

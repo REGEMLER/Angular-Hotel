@@ -1,5 +1,10 @@
-<select class="menu" name="lang-menu" id="lang-menu">
-    <option class="menu__item" value="RU">RU</option>
-    <option value="RU">BE</option>
-    <option value="RU">EN</option>
-</select>
+<div class="menu-container">
+    <button (click)="selectColor()" class="btn"><img src="{{this.selectedFlag}}" alt="{{this.selectedAlt}}"></button>
+    <ul class="menu" [class.menu_active]="isActive">
+        <li *ngFor="let lang of languages" class="menu__item" (click)="selectLanguage(lang.link, lang.alt)">
+            <div class="img"><img src={{lang.link}} alt="{{lang.alt}}"></div>
+            <p class="img-text">{{lang.text}}</p>
+        </li>
+    </ul>
+</div>
+
