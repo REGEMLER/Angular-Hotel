@@ -16,6 +16,9 @@ import { NewsComponent } from './components/pages/news/news.component';
 import { ReviewsComponent } from './components/pages/reviews/reviews.component';
 import { ContactsComponent } from './components/pages/contacts/contacts.component';
 import { BgsliderComponent } from './components/blocks/bgslider/bgslider.component';
+import { AboutComponent } from './components/blocks/about/about.component';
+import { CoffeeComponent } from './components/blocks/coffee/coffee.component';
+import { OfferSliderComponent } from './components/blocks/offer-slider/offer-slider.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { BgsliderComponent } from './components/blocks/bgslider/bgslider.compone
     NewsComponent,
     ReviewsComponent,
     ContactsComponent,
-    BgsliderComponent
+    BgsliderComponent,
+    AboutComponent,
+    CoffeeComponent,
+    OfferSliderComponent
   ],
   imports: [
     BrowserModule,
