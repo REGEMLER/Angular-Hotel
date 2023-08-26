@@ -20,41 +20,48 @@
         padding: 50px 25px;
     }
 
-    .friends-title{
-        @extend %title; 
-        max-width: 400px;
-        margin: 0 auto;
+    .offer-title{
+        width: 100%;
+        margin: 20px auto 0 auto;
+        @include textStyle($main-font, $title, 40px, 400, $dark-color);
+        letter-spacing: 2px;
+        text-transform: capitalize;
         text-align: center;
-        color: $color-title;
-        letter-spacing: 0.05em;
-
-        @media screen and (max-width: 330px){
-            letter-spacing: 0.02em;
+        position: relative;
+        &:after{
+            content: "";
+            width: 50px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            height: 1px;
+            background-color: $dark-color;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
         }
     }
 
-    .friends-btn{
-        @extend %btn; 
-        color: $color-btn;
+    .offer-btn{
         display: block;
         width: 260px;
         margin: 0 auto;
         height: 50px;
         padding: 15px 45px;
         border-radius: 100px;
-        background-color: $primary-color;
-        border-radius: 100px;
+        background-color: $main-color;
         text-align: center;
+        @include textStyle($secont-font, $subtitle, 20px, 400, white);
         letter-spacing: 0.04em;
         transition:  background-color linear 1s, transform linear 1s;
 
         &:hover{
-            background-color: $light-color;
+            background-color: $main-color-a;
             transform: scale(1.05);
         }
         &:active{
             transform: scale(0.95);
-            background-color: $primary-color;
+            background-color: $main-color;
         }
     }
 }
@@ -62,7 +69,7 @@
 
 
 //////////////////////////////////////////////////////SLIDER
-.friends-slider{
+.offer-slider{
     width: 100%;
     margin: 60px auto;
 
@@ -71,7 +78,7 @@
         margin-bottom: 45px;
     }
 
-    .friends-cards{
+    .offer-cards{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -81,14 +88,14 @@
             justify-content: space-around;
         }
 
-        .friend-arrow{
+        .offer-arrow{
             width: 50px;
             height: 50px;
-            border-radius: 50%;
-            border: 2px solid $primary-color;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 50%;
+            border: 2px solid $main-color;
             cursor: pointer;
             transition:  background-color linear 1s, transform linear 1s;
 
@@ -98,7 +105,7 @@
 
             &:hover{
                 transform: scale(1.05);
-                background-color: $primary-color;
+                background-color: $main-color-a;
             }
             &:active{
                 transform: scale(0.95);
@@ -110,7 +117,7 @@
             }
         }
 
-        .friends-carusel{
+        .offer-carusel{
             max-width: 970px;
             overflow: hidden;
 
@@ -133,16 +140,17 @@
                 max-width: 270px;;
             }
 
-            .friends-inner{
+            .offer-content{
                 position: relative;
                 display: flex;
                 justify-content: space-around;
                 align-items: center; 
 
-                .friends-section{
+                .offer-section{
                     display: flex;
                     justify-content: space-between;
                     align-items: center; 
+                    gap: 30px;
     
                     @media screen and (max-width: 430px){
                         flex-wrap: wrap;
@@ -154,14 +162,13 @@
     }
 }
 
-.friend-card{
-    width: 270px;
+.offer-card{
+    width: 300px;
     height: 435px;
-    margin: 0 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $color-link-a;
+    background-color: $second-color;
     border-radius: 9px 9px 0px 0px;
     cursor: pointer;
     transition: background-color linear 1s;
@@ -178,16 +185,11 @@
 
 
     &:hover{
-        background-color: $color-white;
-
-        .freind-card-btn{
-            background-color: $light-color;
-            transform: scale(1.05);
-        }
+        background-color: $second-color-hover;
     }
      
-    .friend-img{
-        width: 270px;
+    .offer-img{
+        width: 300px;
         height: 270px;
         object-fit: cover;
 
@@ -197,42 +199,41 @@
         }
     }
 
-    .friend-subtitle{
-        @extend %subtitle; 
+    .offer-subtitle{
+        @include textStyle($secont-font, $subtitle, 20px, 400, white);
         text-align: center;
-        color: $color-title;
         margin-top: 30px;
         letter-spacing: 0.06em;
     }
 
-    .freind-card-btn{
-        @extend %btn; 
+    .offer-card-btn{
         display: block;
         width: 185px;
         margin: 30px auto;
         height: 50px;
-        color: $color-btn;
+        color: $main-color;
         padding: 15px 45px;
         border-radius: 100px;
-        border: 2px solid $primary-color;
-        background-color: $color-white;
+        border: 2px solid $main-color;
+        background-color: $main-color;
+        @include textStyle($secont-font, $text, 20px, 400, white);
         cursor: pointer;
         transition:  background-color linear 1s, transform linear 1s;
 
         &:active{
             transform: scale(0.95);
-            background-color: $primary-color;
+            background-color: $main-color-a;
         }
     }
 }
 
-.friend-card3{
+.offer-card3{
     @media screen and (max-width: 950px){
         display: none;
     }
 }
 
-.friend-card2{
+.offer-card2{
     @media screen and (max-width: 700px){
         display: none;
     }
@@ -296,12 +297,4 @@
         animation-name: slider-right-small;
         animation-duration: 1s;
     }
-}
-
-.friends-back, .friends-forward{
-    opacity: 0;
-}
-
-.slide__animated{
-    opacity: 1;
 }
