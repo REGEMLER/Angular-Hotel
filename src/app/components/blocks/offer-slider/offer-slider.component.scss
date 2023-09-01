@@ -10,16 +10,6 @@
     @media screen and (max-width: 1050px){
         padding: 85px 30px;
     }
-    @media screen and (max-width: 800px){
-        padding: 100px 30px;
-    }
-    @media screen and (max-width: 550px){
-        padding: 42px 25px;
-    }
-    @media screen and (max-width: 330px){
-        padding: 50px 25px;
-    }
-
     .offer-title{
         width: 100%;
         margin: 20px auto 0 auto;
@@ -66,9 +56,6 @@
     }
 }
 
-
-
-//////////////////////////////////////////////////////SLIDER
 .offer-slider{
     width: 100%;
     margin: 60px auto;
@@ -125,19 +112,10 @@
                 max-width: 570px;
             }
 
-            @media screen and (max-width: 700px){
-                max-width: 270px;
-            }
-
             @media screen and (max-width: 430px){
                 max-width: 335px;
                 order: -1;
                 flex-grow: 2;
-            }
-
-            // Елси это не сделать плохой переход между 430 и 370
-            @media screen and (max-width: 369px){
-                max-width: 270px;;
             }
 
             .offer-content{
@@ -151,11 +129,6 @@
                     justify-content: space-between;
                     align-items: center; 
                     gap: 30px;
-    
-                    @media screen and (max-width: 430px){
-                        flex-wrap: wrap;
-                        justify-content: space-around;
-                    }
                 }
             }
         }
@@ -176,14 +149,6 @@
     @media screen and (max-width: 1150px){
         margin: 0 20px;
     }
-    @media screen and (max-width: 1000px){
-        margin: 0 10px;
-    }
-    @media screen and (max-width: 550px){
-        margin: 0;
-    }
-
-
     &:hover{
         background-color: $second-color-hover;
     }
@@ -192,7 +157,6 @@
         width: 300px;
         height: 270px;
         object-fit: cover;
-
         img{
             width: 100%;
             height: 100%;
@@ -230,71 +194,5 @@
 .offer-card3{
     @media screen and (max-width: 950px){
         display: none;
-    }
-}
-
-.offer-card2{
-    @media screen and (max-width: 700px){
-        display: none;
-    }
-}
-
-@keyframes slider-right{
-    from{ left: 0px;}
-    to{left: -1050px;} 
-}
-
-@keyframes slider-right-mid{
-    from{ left: 0px;}
-    to{left: -580px;} 
-}
-
-@keyframes slider-right-small{
-    from{ left: 0px;}
-    to{left: -270px;} 
-}
-
-@keyframes slider-left{
-    from{ left: 0px;}
-    to{left: 1050px;} 
-}
-
-@keyframes slider-left-mid{
-    from{ left: 0px;}
-    to{left: 580px;} 
-}
-
-@keyframes slider-left-small{
-    from{ left: 0px;}
-    to{left: 270px;} 
-}
-
-.carusel-left{
-    animation-name: slider-left;
-    animation-duration: 3s;
-
-    @media screen and (max-width: 950px){
-        animation-name: slider-left-mid;
-        animation-duration: 2s;
-    }
-
-    @media screen and (max-width: 700px){
-        animation-name: slider-left-small;
-        animation-duration: 1s;
-    }
-}
-
-.carusel-right{
-    animation-name: slider-right;
-    animation-duration: 3s;
-
-    @media screen and (max-width: 950px){
-        animation-name: slider-right-mid;
-        animation-duration: 2s;
-    }
-
-    @media screen and (max-width: 700px){
-        animation-name: slider-right-small;
-        animation-duration: 1s;
     }
 }
