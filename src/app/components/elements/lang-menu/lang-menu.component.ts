@@ -8,21 +8,21 @@ import ILanguage from 'src/app/interfaces/ILanguage';
 })
 export class LangMenuComponent {
   isActive: boolean = false;
-  selectedFlag : string = "../../../../assets/us-flag.png";
+  selectedFlag : string = "assets/us-flag.png";
   selectedAlt : string = "us flag";
   languages :ILanguage[] = [
     {
-      link : "../../../../assets/bel-flag.png",
+      link : "assets/bel-flag.png",
       alt : "belarus flag",
       text : "Беларуская"
     },
     {
-      link : "../../../../assets/rus-flag.png",
+      link : "assets/rus-flag.png",
       alt : "russian flag",
       text : "Русский"
     },
     {
-      link : "../../../../assets/us-flag.png",
+      link : "assets/us-flag.png",
       alt : "us flag",
       text : "English"
     },

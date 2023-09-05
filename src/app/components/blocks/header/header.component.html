@@ -1,12 +1,12 @@
 <header class="container bg__header">
     <div class="inner inner__header">
-        <div class="logo"><a class="logo__link" href="#"><img src="../../../assets/logo.png" alt="logo of hotel"></a></div>
+        <div class="logo"><a class="logo__link" href="#"><img src="assets/logo.png" alt="logo of hotel"></a></div>
         <app-navbar [ngStyle]="{'align-self':'center'}"></app-navbar>
         <div class="btns">
             <button class="btn__book">Заказ</button>
-            <button (click)=changeTheme() *ngIf="isDark; else: darkTheme" class="btn__theme"><img src="../../../assets/moon.png" alt="Moon"></button>
+            <button (click)=changeTheme() *ngIf="isDark; else: darkTheme" class="btn__theme"><img src="assets/moon.png" alt="Moon"></button>
             <ng-template #darkTheme>
-                <button (click)=changeTheme() class="btn__theme"><img src="../../../assets/sun.png" alt="Sun"></button>
+                <button (click)=changeTheme() class="btn__theme"><img src="assets/sun.png" alt="Sun"></button>
             </ng-template>
         </div>
     </div>
