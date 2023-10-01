@@ -7,8 +7,8 @@
                 <div class="offer-carusel">
                     <div class="offer-content">
                         <ul class="offer-section offer-center">
-                            <li *ngFor="let slide of slides">
-                                <app-offer-card [title]="slide.text" [alt]="slide.alt" [src]="slide.src"></app-offer-card>
+                            <li *ngFor="let offer of offers">
+                                <app-offer-card [title]="offer.text" [alt]="offer.alt" [link]="offer.link"></app-offer-card>
                             </li>
                         </ul>    
                     </div>                 

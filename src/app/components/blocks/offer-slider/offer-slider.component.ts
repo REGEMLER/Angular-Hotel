@@ -1,27 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { OfferServiceService, Ioffer } from 'src/app/services/offer-service.service';
 
 @Component({
   selector: 'app-offer-slider',
   templateUrl: './offer-slider.component.html',
   styleUrls: ['./offer-slider.component.scss']
 })
-export class OfferSliderComponent {
+export class OfferSliderComponent implements OnInit {
 
   isCoruselLeft = false;
   isCoruselRight = false;
   title = "We offer";
-  slides = [
-    {text: "Good offer",
-    alt : "VIP Room",
-    src:  "assets/gift1.jpg"
-    }, 
-    {text: "Big sale",
-    alt : "VIP Room",
-    src:  "assets/bonus1.jpg"
-    },
-    {text: "Happy birthday",
-    alt : "VIP Room",
-    src:  "assets/birthday1.jpg"
-    },
-  ]
+  offers: Ioffer[] = []
+
+  constructor(private offerServiceService: OfferServiceService) { }
+
+  ngOnInit(): void {
+    this.getOffers();
+  }
+
+  getOffers(): void {
+    this.offerServiceService.getOffers()
+        .subscribe(offers => this.offers = offers);
+  }
 }

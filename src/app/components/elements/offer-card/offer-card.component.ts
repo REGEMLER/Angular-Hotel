@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 export class OfferCardComponent {
   btn = "Learn more";
   @Input() title: string = "";
-  @Input() src: string = "";
+  @Input() link: string = "";
   @Input() alt: string = "";
 }

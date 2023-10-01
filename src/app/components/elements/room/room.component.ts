@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class RoomComponent {
   @Input() text: string = "";
-  @Input() src: string = "";
+  @Input() link: string = "";
   @Input() alt: string = "";
   btn = "Book now"
 }

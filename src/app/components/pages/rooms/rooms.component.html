@@ -2,7 +2,7 @@
     <app-title [title]="title" [subtitle]="subtitle"></app-title>
     <ul class="rooms">
         <li *ngFor="let room of rooms">
-            <app-room [text]="room.text" [alt]="room.alt" [src]="room.src"></app-room>
+            <app-room [text]="room.text" [alt]="room.alt" [link]="room.link"></app-room>
         </li>
     </ul>
 </app-container>
