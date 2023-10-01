@@ -1,1 +1,8 @@
-<div><p>rooms works!</p></div>
+<app-container>
+    <app-title [title]="title" [subtitle]="subtitle"></app-title>
+    <ul class="rooms">
+        <li *ngFor="let room of rooms">
+            <app-room [text]="room.text" [alt]="room.alt" [src]="room.src"></app-room>
+        </li>
+    </ul>
+</app-container>

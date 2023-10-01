@@ -20,6 +20,10 @@ import { AboutComponent } from './components/blocks/about/about.component';
 import { CoffeeComponent } from './components/blocks/coffee/coffee.component';
 import { OfferSliderComponent } from './components/blocks/offer-slider/offer-slider.component';
 import { TitleComponent } from './components/elements/title/title.component';
+import { ContainerComponent } from './components/elements/container/container.component';
+import { RoomComponent } from './components/elements/room/room.component';
+import { BtnComponent } from './components/elements/btn/btn.component';
+import { OfferCardComponent } from './components/elements/offer-card/offer-card.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +44,11 @@ import { TitleComponent } from './components/elements/title/title.component';
     AboutComponent,
     CoffeeComponent,
     OfferSliderComponent,
-    TitleComponent
+    TitleComponent,
+    ContainerComponent,
+    RoomComponent,
+    BtnComponent,
+    OfferCardComponent
   ],
   imports: [
     BrowserModule,

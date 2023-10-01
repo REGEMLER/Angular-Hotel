@@ -1,16 +1,16 @@
 @import "../../../app.component.scss";
 
-.about__content {
+.room__content {
     width: 100%;
-    margin: 20px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
-    .about__img {
+    .room__img {
         flex-basis: 50%;
         height: 400px;
+        width: 600px;
         border-radius: 2px;
         img {
             width: 100%;
@@ -18,8 +18,11 @@
             object-fit: cover;
         }
     }
-    .about-text {
+    .about-info {
         flex-basis: 50%;
-        @include textStyle($main-font, $text, 20px, 400, black);
+        .room-text {
+            max-width: 350px;
+            @include textStyle($main-font, $text, 20px, 400, black);
+        }
     }
 }

@@ -6,23 +6,11 @@
                 <div class="offer-arrow offer-left"><img src="assets/Arrow-left.svg" alt="arrow left"></div>
                 <div class="offer-carusel">
                     <div class="offer-content">
-                        <div class="offer-section offer-center">
-                            <div id="cardID1" class="offer-card offer-card1">
-                                <div class="offer-img"><img src="assets/birthday1.jpg" alt="birthday cake"></div>
-                                <h3 class="offer-subtitle">Gold Birthday</h3>
-                                <button class="offer-card-btn">Learn more</button>
-                            </div>
-                            <div id="cardID2" class="offer-card friend-card2">
-                                <div class="offer-img"><img src="assets/bonus1.jpg" alt="sale 30%"></div>
-                                <h3 class="offer-subtitle">Big sale</h3>
-                                <button id="1" class="offer-card-btn">Learn more</button>
-                            </div>
-                            <div id="cardID3" class="offer-card offer-card3">
-                                <div class="offer-img"><img src="assets/gift1.jpg" alt="present"></div>
-                                <h3 class="offer-subtitle">Offer</h3>
-                                <button id="3" class="offer-card-btn">Learn more</button>
-                            </div>
-                        </div>    
+                        <ul class="offer-section offer-center">
+                            <li *ngFor="let slide of slides">
+                                <app-offer-card [title]="slide.text" [alt]="slide.alt" [src]="slide.src"></app-offer-card>
+                            </li>
+                        </ul>    
                     </div>                 
                 </div>
                 <div class="offer-arrow offer-right"><img src="assets/Arrow-right.svg" alt="arrow right"></div>

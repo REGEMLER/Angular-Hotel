@@ -115,13 +115,13 @@
                 max-width: 270px;;
             }
 
-            .offer-content{
+            .offer-content {
                 position: relative;
                 display: flex;
                 justify-content: space-around;
                 align-items: center; 
 
-                .offer-section{
+                .offer-section {
                     display: flex;
                     justify-content: space-between;
                     align-items: center; 
@@ -134,142 +134,5 @@
                 }
             }
         }
-    }
-}
-
-.offer-card{
-    width: 300px;
-    height: 435px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $second-color;
-    border-radius: 9px 9px 0px 0px;
-    cursor: pointer;
-    transition: background-color linear 1s;
-
-    @media screen and (max-width: 1150px){
-        margin: 0 20px;
-    }
-    @media screen and (max-width: 1000px){
-        margin: 0 10px;
-    }
-    @media screen and (max-width: 550px){
-        margin: 0;
-    }
-
-
-    &:hover{
-        background-color: $second-color-hover;
-    }
-     
-    .offer-img{
-        width: 300px;
-        height: 270px;
-        object-fit: cover;
-
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    .offer-subtitle{
-        @include textStyle($secont-font, $subtitle, 20px, 400, white);
-        text-align: center;
-        margin-top: 30px;
-        letter-spacing: 0.06em;
-    }
-
-    .offer-card-btn{
-        display: block;
-        width: 185px;
-        margin: 30px auto;
-        height: 50px;
-        color: $main-color;
-        padding: 15px 45px;
-        border-radius: 100px;
-        border: 2px solid $main-color;
-        background-color: $main-color;
-        @include textStyle($secont-font, $text, 20px, 400, white);
-        cursor: pointer;
-        transition:  background-color linear 1s, transform linear 1s;
-
-        &:active{
-            transform: scale(0.95);
-            background-color: $main-color-a;
-        }
-    }
-}
-
-.offer-card3{
-    @media screen and (max-width: 950px){
-        display: none;
-    }
-}
-
-.offer-card2{
-    @media screen and (max-width: 700px){
-        display: none;
-    }
-}
-
-@keyframes slider-right{
-    from{ left: 0px;}
-    to{left: -1050px;} 
-}
-
-@keyframes slider-right-mid{
-    from{ left: 0px;}
-    to{left: -580px;} 
-}
-
-@keyframes slider-right-small{
-    from{ left: 0px;}
-    to{left: -270px;} 
-}
-
-@keyframes slider-left{
-    from{ left: 0px;}
-    to{left: 1050px;} 
-}
-
-@keyframes slider-left-mid{
-    from{ left: 0px;}
-    to{left: 580px;} 
-}
-
-@keyframes slider-left-small{
-    from{ left: 0px;}
-    to{left: 270px;} 
-}
-
-.carusel-left{
-    animation-name: slider-left;
-    animation-duration: 3s;
-
-    @media screen and (max-width: 950px){
-        animation-name: slider-left-mid;
-        animation-duration: 2s;
-    }
-
-    @media screen and (max-width: 700px){
-        animation-name: slider-left-small;
-        animation-duration: 1s;
-    }
-}
-
-.carusel-right{
-    animation-name: slider-right;
-    animation-duration: 3s;
-
-    @media screen and (max-width: 950px){
-        animation-name: slider-right-mid;
-        animation-duration: 2s;
-    }
-
-    @media screen and (max-width: 700px){
-        animation-name: slider-right-small;
-        animation-duration: 1s;
     }
 }

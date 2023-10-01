@@ -1,11 +1,9 @@
-div {
+@import "../../../app.component.scss";
+
+.rooms { 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
-}
-
-p {
-    font-size: 60px;
-    color: red;
+    gap: 10px;
 }
