@@ -9,5 +9,6 @@ export class OfferSliderComponent {
 
   isCoruselLeft = false;
   isCoruselRight = false;
+  title = "We offer";
 
 }

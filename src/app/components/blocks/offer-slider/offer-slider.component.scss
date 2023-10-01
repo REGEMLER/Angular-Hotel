@@ -10,36 +10,11 @@
     @media screen and (max-width: 1050px){
         padding: 85px 30px;
     }
-    @media screen and (max-width: 800px){
-        padding: 100px 30px;
-    }
     @media screen and (max-width: 550px){
         padding: 42px 25px;
     }
     @media screen and (max-width: 330px){
         padding: 50px 25px;
-    }
-
-    .offer-title{
-        width: 100%;
-        margin: 20px auto 0 auto;
-        @include textStyle($main-font, $title, 40px, 400, $dark-color);
-        letter-spacing: 2px;
-        text-transform: capitalize;
-        text-align: center;
-        position: relative;
-        &:after{
-            content: "";
-            width: 50px;
-            margin: 0 auto;
-            margin-bottom: 40px;
-            height: 1px;
-            background-color: $dark-color;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            right: 0;
-        }
     }
 
     .offer-btn{

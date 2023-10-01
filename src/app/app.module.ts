@@ -19,6 +19,7 @@ import { BgsliderComponent } from './components/blocks/bgslider/bgslider.compone
 import { AboutComponent } from './components/blocks/about/about.component';
 import { CoffeeComponent } from './components/blocks/coffee/coffee.component';
 import { OfferSliderComponent } from './components/blocks/offer-slider/offer-slider.component';
+import { TitleComponent } from './components/elements/title/title.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { OfferSliderComponent } from './components/blocks/offer-slider/offer-sli
     BgsliderComponent,
     AboutComponent,
     CoffeeComponent,
-    OfferSliderComponent
+    OfferSliderComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
