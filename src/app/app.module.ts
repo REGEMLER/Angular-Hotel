@@ -24,6 +24,7 @@ import { ContainerComponent } from './components/elements/container/container.co
 import { RoomComponent } from './components/elements/room/room.component';
 import { BtnComponent } from './components/elements/btn/btn.component';
 import { OfferCardComponent } from './components/elements/offer-card/offer-card.component';
+import { OfferComponent } from './components/elements/offer/offer.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { OfferCardComponent } from './components/elements/offer-card/offer-card.
     ContainerComponent,
     RoomComponent,
     BtnComponent,
-    OfferCardComponent
+    OfferCardComponent,
+    OfferComponent
   ],
   imports: [
     BrowserModule,

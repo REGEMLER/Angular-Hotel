@@ -17,4 +17,8 @@
         transform: scale(0.95);
         background-color: $main-color-a;
     }
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }
