@@ -1,1 +1,9 @@
-<div><p>gallery works!</p></div>
+<app-container>
+    <app-title [title]="title" [subtitle]="subtitle"></app-title>
+    <ul class="galery">
+        <li *ngFor="let item of items" class="galery__item">
+            <img class="galery__img" src="{{item.src}}" alt="{{item.alt}}">
+            <p class="galery__text">{{item.text}}</p>
+        </li>
+    </ul>
+</app-container>
