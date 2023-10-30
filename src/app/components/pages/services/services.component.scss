@@ -1,11 +1,36 @@
-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
+@import "../../../app.component.scss";
+
+.services {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url("../../../../assets/hotel3.jpg");
 }
 
-p {
-    font-size: 60px;
-    color: red;
+.services__item {
+    max-width: 30%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all linear .5s;
+    &:hover {
+        background-color: #fff;
+        border-radius: 10px;
+        .services__text {
+            color: black;
+        }
+    }
+    .services__img {
+        width: 100px;
+        height: 100px;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .services__text {
+        @include textStyle($secont-font, $logo, 40px, 400, white);
+    }
 }

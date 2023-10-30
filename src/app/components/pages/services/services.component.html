@@ -1,1 +1,9 @@
-<div><p>servises works!</p></div>
+<app-container>
+    <app-title [title]="title" [subtitle]="subtitle"></app-title>
+    <ul class="services">
+        <li *ngFor="let service of services" class="services__item" routerLink="{{service.link}}">
+            <div class="services__img"><img src="{{service.src}}" alt="{{service.alt}}"></div>
+            <p class="services__text">{{service.text}}</p>
+        </li>
+    </ul>
+</app-container>
