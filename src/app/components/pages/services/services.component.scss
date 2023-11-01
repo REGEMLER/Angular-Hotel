@@ -5,10 +5,17 @@
     margin: 0 auto;
     padding: 20px;
     background-image: url("../../../../assets/hotel3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .services__item {
-    max-width: 30%;
+    max-width: 50%;
+    width: 400px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -22,8 +29,8 @@
         }
     }
     .services__img {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         img {
             object-fit: cover;
             width: 100%;
