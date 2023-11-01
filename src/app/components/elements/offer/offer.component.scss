@@ -33,4 +33,9 @@
         text-align: center;
         @include textStyle($secont-font, $text, 20px, 400, white);
     }
+    .offer__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

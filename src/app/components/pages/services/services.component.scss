@@ -4,13 +4,14 @@
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-image: url("../../../../assets/hotel3.jpg");
+    background-image: url("../../../../assets/banket2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    grid-row-gap: 40px;
 }
 
 .services__item {

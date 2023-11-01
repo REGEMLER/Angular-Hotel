@@ -25,6 +25,7 @@ import { RoomComponent } from './components/elements/room/room.component';
 import { BtnComponent } from './components/elements/btn/btn.component';
 import { OfferCardComponent } from './components/elements/offer-card/offer-card.component';
 import { OfferComponent } from './components/elements/offer/offer.component';
+import { NewsItemComponent } from './components/elements/news-item/news-item.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { OfferComponent } from './components/elements/offer/offer.component';
     RoomComponent,
     BtnComponent,
     OfferCardComponent,
-    OfferComponent
+    OfferComponent,
+    NewsItemComponent
   ],
   imports: [
     BrowserModule,
