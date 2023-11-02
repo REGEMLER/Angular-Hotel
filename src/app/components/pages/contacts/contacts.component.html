@@ -1,3 +1,32 @@
-
-<div><p>contacts works!</p></div>
+<app-container>
+    <app-title [title]="title" [subtitle]="subtitle"></app-title>
+    <div class="content">
+        <div class="map"><iframe src="https://yandex.ru/map-widget/v1/?ll=-118.257713%2C34.045566&mode=poi&poi%5Bpoint%5D=-118.256648%2C34.044748&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D185850208828&z=16.84" frameborder="1" allowfullscreen="true"></iframe></div>
+        <div class="content__top">
+            <div class="content__left">
+                <a class="content__map-link" href="https://www.google.com/maps/@34.0823283,-118.2241064,17.72z?authuser=0&entry=ttu">286 Golden State, Los Angeles, LA 11238, United States</a>
+                <ul class="content__social-medias">
+                    <li><a class="content__social-media" href="https://twitter.com/"><img src="assets/twitter.svg" alt="twitter icon"></a></li>
+                    <li><a class="content__social-media" href="https://www.instagram.com/"><img src="assets/instagram.svg" alt="instagram icon"></a></li>
+                    <li><a class="content__social-media" href="https://es-la.facebook.com/"><img src="assets/facebook.svg" alt="facebook icon"></a></li>
+                </ul>
+            </div>
+            <div class="content__right">
+                <p class="content__time">Write to us</p>
+                <p class="content__time content__time_mb"><a href="mailto:email@angle.com" class="content__link">email@angle.com</a></p>
+                <p class="content__time">Our phone</p>
+                <p class="content__time"><a href="tel:+136745677554" class="content__link">+1 36 987 65 43</a></p>
+            </div>
+        </div>
+        <div class="content__way">
+            <h2 class="content__title">You can reach us</h2>
+            <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, dignissimos tempore repellendus quos itaque vitae ipsum facere magni commodi. Ut obcaecati tempore omnis, id quae modi dolor pariatur animi nostrum.</p>
+            <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quia quod rerum laboriosam, eligendi debitis delectus excepturi iste maxime doloribus tempora. Delectus doloribus ea ut dicta vero maiores cupiditate earum?</p>
+        </div>
+        <div class="content__manager">
+            <h2 class="content__title">Our manager</h2>
+            <div class="manager"><img src="assets/yoda.jpeg" alt="Our boss"></div>
+        </div>
+    </div>
+</app-container>
 
