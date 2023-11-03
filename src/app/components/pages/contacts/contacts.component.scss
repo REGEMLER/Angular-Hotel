@@ -1,11 +1,112 @@
-div {
+@import "../../../app.component.scss";
+
+.content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
 }
 
-p {
-    font-size: 60px;
-    color: red;
+.map {
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+    iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.content__top{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.content__left{
+    .content__map-link{
+        display: block;
+        max-width: 230px;
+        margin-bottom: 18px;
+        @include textStyle($secont-font, $text, 20px, 400, black);
+        text-transform: capitalize;
+        transition: all linear .3s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .content__social-medias{
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+        border-radius: 2px;
+        background-color: black;
+    }
+    .content__social-media{
+        display: block;
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.content__right{
+    .content__time{
+        max-width: 200px;
+        @include textStyle($secont-font, $text, 20px, 400, black);
+        text-align: right;
+        .content__link{
+            @include textStyle($secont-font, $text, 20px, 400, black);
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all linear .3s;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .content__time_mb{
+        margin-bottom: 10px;
+    }
+}
+
+.content__way {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content__title {
+    width: 100%;
+    margin: 20px auto;
+    @include textStyle($secont-font, $logo, 40px, 400, black);
+    text-align: center
+}
+
+.content__text {
+    width: 100%;
+    margin: 10px auto;
+    @include textStyle($secont-font, $text, 20px, 400, black);
+}
+
+.content__manager {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.manager {
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }

@@ -1,0 +1,41 @@
+@import "../../../app.component.scss";
+
+.offer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer__img {
+    width: 550px;
+    height: 400px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.offer__info {
+    flex-basis: 50%;
+    height: 400px;
+    background-color: $second-color;
+    padding: 2rem;
+    .info__title {
+        margin: 1rem auto;
+        text-align: center;
+        @include textStyle($secont-font, $subtitle, 20px, 400, white);
+    }
+    .info__text {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        @include textStyle($secont-font, $text, 20px, 400, white);
+    }
+    .offer__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

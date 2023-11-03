@@ -1,49 +1,6 @@
 @import "../../../app.component.scss";
 
-.bg__coffee{
-    background-color: $light-color;
-}
-
-.inner__coffee{
-    padding: 0 20px;
-}
-
-.title{
-    width: 100%;
-    margin: 20px auto 0 auto;
-    @include textStyle($main-font, $title, 40px, 400, $dark-color);
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    text-align: center;
-    position: relative;
-    &:after{
-        content: "";
-        width: 50px;
-        margin: 0 auto;
-        margin-bottom: 40px;
-        height: 1px;
-        background-color: $dark-color;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-    }
-}
-
-.coffee__subtitle{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    @include textStyle($secont-font, $subtitle, 40px, 400, black);
-    letter-spacing: 2px;
-}
-
-.coffee__subtitle1{
-    margin-top: 60px;
-}
-
-
-.coffee__content{
+.coffee__content {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -65,18 +22,18 @@
     }
 }
 
-.coffee__card{
+.coffee__card {
     max-width: 470px;
     min-height: 520px;
 }
 
-.coffee__card2{
+.coffee__card2 {
     @media screen and (max-width: 1024px){
         align-self: flex-end;
     }
 }
 
-.coffee-card__title{
+.coffee-card__title {
     width: 100%;
     margin: 40px auto;
     @include textStyle($main-font, $title, 40px, 400, $main-color);
@@ -84,22 +41,22 @@
     text-transform: capitalize;
 }
 
-.coffee-card__title_right{
+.coffee-card__title_right {
     text-align: right;
     @media screen and (max-width: 1024px){
         margin: 20px auto 40px auto;
     }
 }
 
-.coffee-card__title_left{
+.coffee-card__title_left {
     text-align: left;
 }
 
-.coffee-card__items{
+.coffee-card__items {
     @media screen and (max-width: 1024px){
         max-width: 440px;
     }
-    .coffee-card__item{
+    .coffee-card__item {
         min-width: 440px;
         margin: 0 auto;
         display: flex;
@@ -111,7 +68,7 @@
             min-width: 300px;
             width: 100%;
         }
-        &:after{
+        &:after {
             content: "";
             width: 100px;
             height: 1px;
@@ -123,32 +80,31 @@
                 left: 55%;
             }
         }
-        .coffee-card__text{
+        .coffee-card__text {
             @include textStyle($secont-font, $subtitle, 40px, 400, black);
             letter-spacing: 2px;
             text-transform: capitalize;
             text-align: left;
         }
-        .coffee-card__price{
+        .coffee-card__price {
             @include textStyle($main-font, $subtitle, 40px, 400, black);
             letter-spacing: 2px;
             text-transform: capitalize;
         }
     }
-    .coffee-card__item_last{
+    .coffee-card__item_last {
         @media screen and (max-width: 1024px){
             margin-bottom: 20px;
         }
     }
-    .coffee-card__item_right{
+    .coffee-card__item_right {
         justify-content: flex-end;
         gap: 220px;
     }
 }
 
-.coffee-card__items2{
+.coffee-card__items2 {
     @media screen and (max-width: 1024px){
         max-width: 480px;
     }  
 }
-

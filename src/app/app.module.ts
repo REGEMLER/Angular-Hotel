@@ -19,6 +19,15 @@ import { BgsliderComponent } from './components/blocks/bgslider/bgslider.compone
 import { AboutComponent } from './components/blocks/about/about.component';
 import { CoffeeComponent } from './components/blocks/coffee/coffee.component';
 import { OfferSliderComponent } from './components/blocks/offer-slider/offer-slider.component';
+import { TitleComponent } from './components/elements/title/title.component';
+import { ContainerComponent } from './components/elements/container/container.component';
+import { RoomComponent } from './components/elements/room/room.component';
+import { BtnComponent } from './components/elements/btn/btn.component';
+import { OfferCardComponent } from './components/elements/offer-card/offer-card.component';
+import { OfferComponent } from './components/elements/offer/offer.component';
+import { NewsItemComponent } from './components/elements/news-item/news-item.component';
+import { ReviewComponent } from './components/elements/review/review.component';
+import { ReviewFormComponent } from './components/elements/review-form/review-form.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +47,16 @@ import { OfferSliderComponent } from './components/blocks/offer-slider/offer-sli
     BgsliderComponent,
     AboutComponent,
     CoffeeComponent,
-    OfferSliderComponent
+    OfferSliderComponent,
+    TitleComponent,
+    ContainerComponent,
+    RoomComponent,
+    BtnComponent,
+    OfferCardComponent,
+    OfferComponent,
+    NewsItemComponent,
+    ReviewComponent,
+    ReviewFormComponent
   ],
   imports: [
     BrowserModule,

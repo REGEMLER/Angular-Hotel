@@ -1,1 +1,8 @@
-<div><p>offers works!</p></div>
+<app-container>
+    <app-title [title]="title" [subtitle]="subtitle"></app-title>
+    <ul class="offers">
+        <li *ngFor="let offer of offers">
+            <app-offer [title]="offer.text" [text]="offer.decsription" [alt]="offer.alt" [link]="offer.link"></app-offer>
+        </li>
+    </ul>
+</app-container>

@@ -1,0 +1,29 @@
+@import "../../../app.component.scss";
+.title {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    @include textStyle($main-font, $title, 40px, 400, $dark-color);
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    &:after{
+        content: "";
+        width: 50px;
+        margin: 0 auto;
+        height: 1px;
+        background-color: $dark-color;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+}
+
+.subtitle {
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+    @include textStyle($secont-font, $subtitle, 40px, 400, black);
+    letter-spacing: 2px;
+}

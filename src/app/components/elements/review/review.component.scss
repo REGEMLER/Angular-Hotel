@@ -1,0 +1,31 @@
+@import "../../../app.component.scss";
+
+.review {
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    position: relative;
+    background-color: $second-color;
+}
+
+.review__date {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    @include textStyle($logo-font, $text, 20px, 400, $second-color);
+}
+
+.review__title {
+    width: 100%;
+    margin: 20px auto;
+    @include textStyle($main-font, $logo, 40px, 400, white);
+}
+
+.review__text {
+    width: 100%;
+    margin: 20px auto;
+    @include textStyle($secont-font, $text, 20px, 400, white);
+}

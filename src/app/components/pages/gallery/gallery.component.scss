@@ -1,11 +1,49 @@
-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
+@import "../../../app.component.scss";
+
+.galery {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px 10px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .galery__item {
+        position: relative;
+        max-width: 500px;
+        max-height: 450px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .galery__text {
+        @include textStyle($secont-font, $logo, 40px, 400, white);
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all linear .6s;
+    }
+
+    .galery__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        transition: all linear .6s;
+    }
 }
 
-p {
-    font-size: 60px;
-    color: red;
+.galery__item:hover  .galery__text {
+    top: -10%;
+    opacity: 0;
+}
+
+.galery__item:hover  .galery__img {
+    transform: scale(1.05);
 }

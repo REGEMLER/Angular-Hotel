@@ -1,1 +1,8 @@
-<div><p>news works!</p></div>
+<app-container>
+    <app-title [title]="title" [subtitle]="subtitle"></app-title>
+    <ul class="news">
+        <li *ngFor="let n of news">
+            <app-news-item [date]="n.date" [title]="n.title" [text]="n.text" [alt]="n.alt" [link]="n.link"></app-news-item>
+        </li>
+    </ul>
+</app-container>

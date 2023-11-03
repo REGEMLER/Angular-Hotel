@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent {
-
+  title: string = "Our contacts";
+  subtitle: string = "Dont hasitate, call us!" 
 }
