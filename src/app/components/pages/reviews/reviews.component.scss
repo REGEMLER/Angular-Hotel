@@ -1,11 +1,12 @@
-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-}
+@import "../../../app.component.scss";
 
-p {
-    font-size: 60px;
-    color: red;
+.reviews {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 40px;
 }

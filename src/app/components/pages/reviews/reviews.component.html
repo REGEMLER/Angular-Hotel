@@ -1,1 +1,9 @@
-<div><p>reviews works!</p></div>
+<app-container>
+    <app-title [title]="title" [subtitle]="subtitle"></app-title>
+    <ul class="reviews">
+        <li *ngFor="let review of reviews">
+            <app-review [title]="review.title" [text]="review.text" [date]="review.date"></app-review>
+        </li>
+    </ul>
+    <app-review-form></app-review-form>
+</app-container>

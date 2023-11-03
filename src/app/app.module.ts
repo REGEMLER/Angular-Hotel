@@ -26,6 +26,8 @@ import { BtnComponent } from './components/elements/btn/btn.component';
 import { OfferCardComponent } from './components/elements/offer-card/offer-card.component';
 import { OfferComponent } from './components/elements/offer/offer.component';
 import { NewsItemComponent } from './components/elements/news-item/news-item.component';
+import { ReviewComponent } from './components/elements/review/review.component';
+import { ReviewFormComponent } from './components/elements/review-form/review-form.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { NewsItemComponent } from './components/elements/news-item/news-item.com
     BtnComponent,
     OfferCardComponent,
     OfferComponent,
-    NewsItemComponent
+    NewsItemComponent,
+    ReviewComponent,
+    ReviewFormComponent
   ],
   imports: [
     BrowserModule,
